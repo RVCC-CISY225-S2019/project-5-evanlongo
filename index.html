@@ -147,16 +147,41 @@
 		<hr>
 		<section class="form-container">
 			<h1>Get in Touch</h1>
-			<form class="contact">
+			<form class="contact" method="POST" action="https://formspree.io/branles@yandex.ru">
 				<fieldset>
-					<legend>Contact Me:</legend>
-					<input type="text" name="name"><br>
-					<input type="email" name="_replyto"><br>
-					<input type="submit" value="Send"><br>
-					<button type="Send Message"></button><br>
-					
-					<input type="radio" id="Contact Me" name="contact" value="email">
-					<label for="Contact Me">Email</label>
+					<legend>
+						Please contact me
+					</legend>
+                			<label for="email">
+						E-mail
+					</label>
+                			<br><br>
+                			<input type="text" name="email" id="email">
+                			<br><br>
+                			<fieldset>
+                    				<legend>
+							I would like a reply
+						</legend>
+                    				<input type="radio" name="yes-no" value="Yes" checked>
+							Yes
+						<br>
+                    				<input type="radio" name="yes-no" value="No">
+							No
+						<br>
+                			</fieldset>
+                			<br>
+                			<label for="message">
+					Message
+					</label>
+                			<br><br>
+                			<textarea name="message" id="message">
+					</textarea>
+                			<br><br>
+					<button type="submit">
+					<br>
+					Send Message
+					<br><br>
+					</button>
 				</fieldset>
 			</form>
 		</section>
